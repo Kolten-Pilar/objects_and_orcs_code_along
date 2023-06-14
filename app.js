@@ -166,7 +166,7 @@ class Hobbit extends Character {
     this.steal();
   }
 }
-
+//
 const frodo = new Hobbit('frodo', 30, 'blue', 'black')
 console.log(frodo);
 frodo.classyGreeting(hobbit);
