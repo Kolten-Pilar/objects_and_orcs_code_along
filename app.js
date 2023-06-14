@@ -6,11 +6,13 @@ const adventurer = {
   belongings: ['sword','potion', 'medicine'],
   companion: {
     name: 'stinky',
-    type: 'Cat'
+    type: 'Cat',
+    belongings: ['ball of yarn', 'healing potions', 'health insurance', 'satchel of elements']
   }
 }
 
 console.log(adventurer.companion.name);
+console.log(`One of my companions belongings is ${adventurer.companion.belongings[2]}`);
 
 //access the values in the array
 
@@ -28,3 +30,22 @@ for (let i=0; i < adventurer.belongings.length; i++) {
 
 //#1 OBJ withing OBJ
 
+const movies = [
+  {
+    title: 'Tokyo Story'
+  },
+  {
+    title: 'Paul Blart: Mall Cop'
+  },
+  {
+    title: "L'Avventura"
+  }
+];
+
+console.log(movies[0].title); //object
+
+//looping over array of objects
+
+for (let i = 0; i < movies.length; i++) {
+  console.log(movies[i].title);
+}
